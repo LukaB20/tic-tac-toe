@@ -25,6 +25,7 @@
 body {
     background-color: #8EC5FC;
     background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    position: relative;
 }
 
 .title {
@@ -145,4 +146,28 @@ body {
 
 .pva-game {
     padding-top: 1rem;
+}
+
+.winner{
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner.active{
+    display: flex;
+}
+
+.winner h1 {
+    color: white;
+    font-size: 5rem;
 }
